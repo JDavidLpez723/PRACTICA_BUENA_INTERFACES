@@ -40,7 +40,7 @@
 		
 		
 		<section id="formulario">
-             <div id="inicio">
+            <div id="inicio">
                 <table id="tabInicio">
                     <tr><td><a href="webpage2.html"><img class="menu" src="images/menu.png" title="menu" alt="menu"></a></td><td><img class="logo" src="images/logo.png" title="logo" alt="logo"></td>
                     <td class="space1"><h1 class="h1">Universidad Carlos III de Madrid</h1></td></tr>
@@ -87,7 +87,6 @@
                         <tr>
                             <td><p>Documento de identificación*:</p></td>
                             <td><input type="text" min="100000000" max="999999999" minlength="9" maxlength="9" name="dni" id="dni" pattern="^([0-9]{8,8}\-[A-Z])|^" class="inputForm" required></td>
-                            input type="text" id="nia" maxlength="9" minlength="9" title="9 dígitos, donde los primeros tres son 100" pattern="100*[0-9]*" class="inputForm" required
                         </tr>
 
                         <tr>
@@ -153,7 +152,10 @@
                         <tr><td></td></tr>
                         <tr><td></td></tr>
                         <tr><td></td></tr>
-                        <tr><td colspan="2"><input type="submit" value="Guardar" id="save"></input><button type="button" id="delete">Borrar</button></td></tr> 
+                        <tr><td colspan="2">
+                            <input type="submit" value="Guardar" id="save">
+                            <input type="reset" value="Borrar" id="delete">
+                            </td></tr> 
                     </table>
 
                 </form>

@@ -1,0 +1,76 @@
+function checkCookie(a) { //validamos formulario. Parametro: valor de contador. Si esta todo correcto, creamos cookie
+
+	var delimiter = "---";
+
+    username = document.getElementById('usuario').value;
+    if (username == "") {
+        alert("Debe rellenar el usuario");
+        return "";
+    }
+	
+	nia = document.getElementById('nia').value;
+	if (nia == "") {
+        alert("Debe rellenar con su NIA");
+        return "";
+    }
+	
+	
+    password = document.getElementById('password').value;
+    if (password == "") {
+        alert("Debe rellenar la contraseña");
+        return "";
+    }
+	
+    name = document.getElementById('nomAp').value;
+    if (name == "") {
+        alert("Debe rellenar el nombre");
+        return "";
+    }
+
+    email = document.getElementById('correo').value;
+    if (email == "") {
+        alert("Debe rellenar un email correcto");
+        return "";
+    }
+    var exp = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    if (exp.test(email) == false) {
+        alert("Debe rellenar un email correcto, formato nombre@dominio.extensión");
+        return "";
+    }
+
+    bday = document.getElementById('birth').value;
+    if (bday == "") {
+        alert("Debe rellenar fecha de nacimiento");
+        return "";
+    }
+	dni= document.getElementById('dni').value;
+	if (dni == "") {
+        alert("Debe rellenar su DNI");
+        return "";
+    }
+	/*
+	rol = document.getElementById('rol').value;
+    if (rol == "") {
+        alert("Debe indicar un rol");
+        return "";
+    }
+	
+    idioma_1 = "";
+    if (document.getElementById('español').checked) idioma_1 = document.getElementById('español').value;
+    idioma_2 = "";
+    if (document.getElementById('ingles').checked) idioma_2 = document.getElementById('ingles').value;
+    idioma_3 = "";
+    if (document.getElementById('frances').checked) idioma_3 = document.getElementById('frances').value;
+    idioma_4 = "";
+    if (document.getElementById('italiano').checked) idioma_4 = document.getElementById('italiano').value;
+    idioma_5 = "";
+    if (document.getElementById('aleman').checked) idioma_1 = document.getElementById('aleman').value;
+    idioma_6 = "";
+    if (document.getElementById('portugues').checked) idioma_1 = document.getElementById('portugues').value;
+    */
+    conditions = document.getElementById('terms').value;
+    
+    if (conditions == "") {
+        alert("No has aceptado los términos");
+        return "";
+    }
