@@ -1,12 +1,16 @@
 $(document).ready(function start2(){
   $(".grado").hide();
-  $("#login").click(checkCookie);
+  $("#login").click(check_session());
   $("#register").click(function(){
     $("#inicio").hide();
-    $("#formulario").show();$("#formulario").css("display", "grid");
+    $("#formulario").show();
+    $("#formulario").css("display", "grid");
   });
   $("#save").click(function(){
     checkEmail();
+  });
+  $("#login").click(function(){
+    check_session();
   });
   
   $("#alumno").click(function(){
@@ -19,7 +23,6 @@ $(document).ready(function start2(){
     $(".grado").hide();
   });
 
-  $("#save").click(setCookie2);
 });
 
 
@@ -145,6 +148,51 @@ function checkEmail() { //comprobamos primero si email esta correcto
     checkCookie(sessionStorage.getItem('contador')); //llamamos a checkCookie para rellenar la cookie con los valores de los campos del form y despues crearla
 
 
+
+}
+
+function check_session() { //comprobar el inicio de sesión para ver si existe correo y contraseña en alguna cookie
+    var check_email = false;
+    var check_pass = false;
+    var usuario;
+    //obtenemos campos que introdujo usuario
+    email = document.getElementById('correo1').value;
+    password = document.getElementById('contraseña1').value;
+    //obtener contador, que es nuestro valor maximo de cookies guardadas
+    limite = sessionStorage.getItem("contador");
+
+    for (i = 1; i <= limite; i++) { //buscamos si email y password introducidas existen en cookies
+        id = String(i);
+        nom_cookie = sessionStorage.getItem(id);
+        for (cookie_toSearch = getCookie(nom_cookie), j = cookie_toSearch.length; j--;) {
+            if (cookie_toSearch[j] == email) check_email = true; //existe email
+            if (cookie_toSearch[j] == password) check_pass = true; //existe password
+            if (check_email == true && check_pass == true) {
+                usuario = cookie_toSearch[0]; //si estamos en la cookie que contiene ese email y esa password, cogemos su usuario
+            }
+        }
+    }
+    if (check_email == true && check_pass == true) { //si existen email y contraseña, mostramos section con la pagina principal y usuario actualizado
+        /* for (elements = document.getElementsByClassName('sect1'), i = elements.length; i--;) {
+            (elements[i].style.display = "block");
+        }
+        for (elements = document.getElementsByClassName('sect3'), j = elements.length; j--;) {
+            (elements[j].style.display = "none");
+        }
+        //cambiar nombre de usuario
+        document.getElementById("user_text").innerHTML = String(usuario);
+        //actualizamos menu
+        document.getElementById('p_menu_1').id = "p_menu_1_changed";
+        document.getElementById('p_menu_1_changed').innerHTML = "Cerrar sesión";
+        document.getElementById("p_menu_2").id = "p_menu_2_changed";
+        document.getElementById("p_menu_2_changed").innerHTML = "Perfil";
+
+        var foot = document.getElementsByTagName('footer');
+        foot[0].style.position = 'static'; //para que no se fije el footer */
+        alert("usuario dado de alta");
+
+
+    } else alert("Este usuario no está dado de alta"); //si no existe el usuario
 
 }
 
