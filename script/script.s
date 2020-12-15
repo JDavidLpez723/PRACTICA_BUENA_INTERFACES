@@ -3,6 +3,8 @@ $(document).ready(function start(){
     // Cargar gráficos de google
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChart);
+	$(".article1").css("display","none");
+	$("#web").css("grid-template-columns","75% 25%");
 
     // Dibujar el gráfico y establecer los valores inciales
     function drawChart() {
@@ -22,19 +24,39 @@ $(document).ready(function start(){
     }
 
     document.getElementById("nombre").innerHTML=obtenerVariables();
-   /* $("#inicio").click(function(){
+   $(".asig_ruta").click(function(){
+        $("#studentDiv").hide();
+        $("#foroDiv").hide();
+        $("#calificacionesDiv").hide();
+        $(".topicDiv").hide();
+		$(".asig_ini").show();
+        $("#calificaciones2").css("display", "none");
+		$(".article1").css("display","none");
+		$("#web").css("grid-template-columns","75% 25%");
+
+		
+    });
+
+    $("#inicio").click(function(){
         $("#studentDiv").hide();
         $("#foroDiv").hide();
         $("#calificacionesDiv").hide();
         $(".topicDiv").show();
+		$(".asig_ini").hide();
         $("#calificaciones2").css("display", "none");
-    });*/
+		$(".article1").css("display","block");
+		$("#web").css("grid-template-columns","25% 50% 25%");
+		
+    });
     $(".inicio").click(function(){
         $("#studentDiv").hide();
         $("#foroDiv").hide();
         $("#calificacionesDiv").hide();
         $(".topicDiv").show();
+		$(".asig_ini").hide();
         $("#calificaciones2").css("display", "none");
+		$(".article1").css("display","block");
+		$("#web").css("grid-template-columns","25% 50% 25%");
     });
 
     $("#estudiantes").click(function(){
@@ -42,7 +64,10 @@ $(document).ready(function start(){
         $("#foroDiv").hide();
         $("#calificacionesDiv").hide();
         $("#studentDiv").show();
+		$(".asig_ini").hide();
         $("#calificaciones2").css("display", "none");
+		$(".article1").css("display","block");
+		$("#web").css("grid-template-columns","25% 50% 25%");
     });
 
     $("#foro").click(function(){
@@ -50,11 +75,15 @@ $(document).ready(function start(){
         $("#studentDiv").hide();
         $("#calificacionesDiv").hide();
         $("#foroDiv").show();
+		$(".asig_ini").hide();
         $("#calificaciones2").css("display", "none");
+		$(".article1").css("display","block");
+		$("#web").css("grid-template-columns","25% 50% 25%");
     });
 
     $("#calificaciones").click(function(){
         $(".topicDiv").hide();
+		$(".asig_ini").hide();
         $("#studentDiv").hide();
         $("#foroDiv").hide();
         $("#calificacionesDiv").show();
@@ -62,6 +91,8 @@ $(document).ready(function start(){
         $(".asignatura").css("display", "none");
         $("#calificacionesTable").show();
         $("#calButton").show();
+		$(".article1").css("display","block");
+		$("#web").css("grid-template-columns","25% 50% 25%");
     });
 
     $("#calificaciones2").click(function(){

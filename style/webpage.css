@@ -201,7 +201,7 @@ tr#check{
 
 .article1{
     padding: 1em;
-   
+	display:none;
     background-color: #457b9d;
 }
 
@@ -545,13 +545,60 @@ button#calendario{
     display:none;
 }
 
+.asig_ini{
+	float:left;
+	margin-left:1%;
+	width:auto;
+
+}
+#menu * :hover,
+#menu * :focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+	
+}
+
+
+
+
+#menu * { list-style:none;}
+#menu li{ line-height:180%;}
+#menu li a{color:#1d3557; text-decoration:none;}
+#menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+
+#menu input[name="list"] {
+	position: absolute;
+	left: -1000em;
+	}
+#menu label:before{ content:"\025b8"; margin-right:4px;}
+#menu input:checked ~ label:before{ content:"\025be";}
+#menu .interior{display: none;}
+#menu input:checked ~ ul{display:block;}
+
+.asig_ini ul{
+	list-style:none;
+	width: 100%;
+	color: #1d3557;
+}
+
+.asig_ini li{
+	padding:1%;
+	width:auto;
+}
+
+.asig_ruta{
+	
+}
+
+
 .topicDiv{
     padding: 1em;
     color:#1d3557;
     text-align: justify;
     background-color: #a8dadc;
     height: auto;
-    
+    display:none;
     
 }
 
@@ -587,6 +634,37 @@ button#calendario{
     color: #a8dadc;
     text-align: center;
 }
+
+ /* Style the list */
+ul.breadcrumb {
+    padding: 0px;
+    list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 11px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+} 
 
 @media only screen and (max-width: 600px) {
     .article3{display:none;}
