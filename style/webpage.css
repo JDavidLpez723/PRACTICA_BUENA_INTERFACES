@@ -66,6 +66,10 @@ div#container {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+div#id{
+    display:"none";
+}
+
 div#foroDiv {
     display:none;
     padding: 1em;
