@@ -267,14 +267,14 @@ function checkCookie(a) { //validamos formulario. Parametro: valor de contador. 
     if (document.getElementById('portugues').checked) idioma_1 = document.getElementById('portugues').value;
     */
     conditions = document.getElementById('terms').value;
-    
+   
     if (conditions == "") {
         alert("No has aceptado los términos");
         return "";
     }
     //almacenamos en un String los valores de los campos separados por delimitador
     var userdata = username + delimiter + nia + delimiter + password + delimiter + namee + delimiter + email + delimiter + bday + delimiter + dni + delimiter + conditions;
-
+    alert("hola");
     counter = parseInt(a, 10); //pasamos a entero el contador
     counter += 1; //lo incrementamos para llamar a la proxima cookie
     name_cookie = "" + counter; //ponemos nombre a cookie
@@ -283,9 +283,10 @@ function checkCookie(a) { //validamos formulario. Parametro: valor de contador. 
     sessionStorage.setItem(name_cookie, name_cookie); //para tener sólo id de cookie guardada y buscar luego en iniciar sesion
 
     //si todo esta correcto
-
     alert("Registro realizado con éxito");
     $("#nombre").html(username);
+    $("#cerrarSesion").html('Cerrar sesión');
+
     
 }
 
@@ -351,6 +352,7 @@ function check_session() { //comprobar el inicio de sesión para ver si existe c
         $("#newPage").css("display", "none");
         $("#container").css("display", "grid");
         $("#nombre").html(usuario);
+        $("#cerrarSesion").html('Cerrar sesión');
         
 
 
