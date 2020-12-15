@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UC3M - Interfaces de Usuario</title> 
+    <meta charset="UTF-8">
+	<meta name="viewport" content "width=device-width, intitial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/webpage.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/script.s"></script>
+    
+</head>
+
+
+<body>
+    
+    <!-- modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="month">
+                <ul>
+                  <li class="prev">&#10094;</li>
+                  <li class="next">&#10095;</li>
+                  <li>Octubre 2020</li>
+                </ul>
+            </div>
+            <div class="week">  
+              <ul class="weekdays">
+                <li>L</li>
+                <li>M</li>
+                <li>X</li>
+                <li>J</li>
+                <li>V</li>
+                <li>S</li>
+                <li>D</li>
+              </ul>
+            </div>
+            <div class="day"> 
+              <ul class="days">
+                <li class="daysTop1">28</li>
+                <li class="daysTop1">29</li>
+                <li class="daysTop1">30</li>
+                <li class="daysTop2">1</li>
+                <li class="daysTop2">2</li>
+                <li class="daysTop2">3</li>
+                <li class="daysTop2">4</li>
+                <li class="days3">5</li>
+                <li class="days3">6</li>
+                <li class="days3">7</li>
+                <li class="days3">8</li>
+                <li class="days3">9</li>
+                <li class="days3">10</li>
+                <li class="days3">11</li>
+                <li class="days3">12</li>
+                <li class="days3">13</li>
+                <li class="days3">14</li>
+                <li class="days3">15</li>
+                <li class="days3">16</li>
+                <li class="days3">17</li>
+                <li class="days3">18</li>
+                <li class="days3">19</li>
+                <li class="days3">20</li>
+                <li class="days3">21</li>
+                <li class="days3">22</li>
+                <li class="days3">23</li>
+                <li class="days3">24</li>
+                <li class="days3"><span class="active">25</span></li>
+                <li class="days3">26</li>
+                <li class="days3">27</li>
+                <li class="days3"><span class="active">28</span></li>
+                <li class="days3"><span class="active">29</span></li>
+                <li class="days3">30</li>
+                <li class="days3">31</li>
+                <li class="daysTop1">1</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <div id="chart" class="modal1">
+        <div id="closing">
+            <span class="close1">&times;</span>
+        </div>
+        <div id="linechart" class="modal-content1">
+        </div>
+        
+    </div>
+
+
+    <div id="container">
+        <header class="header"> 
+            <div class="inicio">
+                <table id="tabInicio">
+                    <tr><td><a href="webpage2.html"><img class="menu" src="images/menu.png" title="menu" alt="menu"></a></td><td><img class="logo" src="images/logo.png" title="logo" alt="logo"></td>
+                    <td class="space1"><h1 class="h1">Universidad Carlos III de Madrid</h1></td></tr>
+                </table>
+            </div>
+            
+            <div id="usuario">
+                <div>
+                    <p id="nombre" class="username">Nuevo usuario</p>
+                    <button type="button" class="closeSe">Cerrar sesión</button>
+                </div>
+                <img class="perfil" src="images/user.png" title="Usuario" alt="Usuario">
+            </div>
+        </header>
+        <section id="web">
+           
+            <article class="article1">
+                <p><button type="button" id="inicio"><b>INTERFACES DE USUARIO</b></button></p>
+                <table class="tablita">
+                    <tr><td><button type="button" id="estudiantes"><img class="topicImagee" src="images/lista.png" title="estudiantes" alt="Listado de estudiantes">Listado de estudiantes</button></td></tr>
+					<tr><td><button type="button" id="foro"><img class="topicImagee" src="images/foro.png" title="foro" alt="Foro de la asignatura">Foro de la asignatura</button></td></tr>
+                    <tr><td><button type="button" id="calificaciones"><img class="topicImagee" src="images/cali.png" title="calificaciones" alt="Calificaciones">Calificaciones</button></td></tr>
+                    <tr><td><button type="button" id="calificaciones2"><img class="topicImagee" src="images/cali.png" title="calificaciones2" alt="Calificaciones generales">Calificaciones generales</button></td></tr>
+					<tr class="tablet"><td><button type="button" id="tabNews"><img class="topicImagee" src="images/lista.png" title="noticias" alt="Últimas noticias">Últimas noticias</button></td></tr>
+                    <tr class="tablet"><td><button type="button" class="calendario" id="tabCalendar"><img class="topicImagee" src="images/lista.png" title="calendario" alt="Próximos Eventos">Próximos Eventos</button></td></tr>
+                </table>
+            </article>
+
+            <article>
+               <div class="topicDiv">
+                <table>
+                    <tr><td><img class="topicImage" src="images/T1.jpg" title="Topic 1" alt="Topic 1"></td>
+                    <td><h2>Tema 1 - Usabilidad</h2></td></tr>
+                </table>
+                <p>La usabilidad web es la disciplina que estudia la forma de diseñar sitios web para que los usuarios puedan interactuar con ellos de la forma más fácil, cómoda e intuitiva posible.
+
+                La mejor forma de crear un sitio web usable es realizando un diseño centrado en el usuario, diseñando para y por el usuario, en contraposición a lo que podría ser un diseño centrado en la tecnología o uno centrado en la creatividad u originalidad.
+                </p>
+                
+                <table class="pc">
+                    <tr><td> <video width="205" height="108" controls><source src="videos/Usabilidad.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                        <td><p class="videoDescription">En este video se puede ver un ejemplo del grado de usabilidad de la aplicación Shazam para IOS.</p></td>
+                    </tr>
+                </table>
+                <table class="tabPho">
+                    <tr><td> <video width=100% height="200" controls><source src="videos/Usabilidad.mp4" type="video/mp4"> Your browser does not support the video tag.</video></td></tr>
+                    <tr><td><p class="videoDescription">En este video se puede ver un ejemplo del grado de usabilidad de la aplicación Shazam para IOS.</p></td>
+                    </tr>
+                </table>
+
+                <table class="pc">
+                    <tr><td> <video width="205" height="108" controls><source src="videos/Netflix.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                        <td><p class="videoDescription">En este caso la aplicación Netflix se puede ver como destaca por su facilidad de uso y una interación efectiva con el ususario.</p></td>
+                    </tr>
+                </table>
+                <table class="tabPho">
+                    <tr><td><video width=100% height="200" controls><source src="videos/Netflix.mp4" type="video/mp4">Your browser does not support the video tag.</video></td></tr>
+                        <tr>    <td><p class="videoDescription">En este caso la aplicación Netflix se puede ver como destaca por su facilidad de uso y una interación efectiva con el ususario.</p></td>
+                    </tr>
+                </table>
+                    
+                <table class="pc">
+                    <tr><td> <video width="205" height="108" controls><source src="videos/Laptop.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                    <td><p class="videoDescription">El video muestra como la manera en la que los usuarios pueden interactuar con una interfaz de manera fácil y cómoda.</p></td>
+                    </tr>
+                </table>
+                <table class="tabPho">
+                    <tr><td> <video width=100% height="200" controls><source src="videos/Laptop.mp4" type="video/mp4">Your browser does not support the video tag.</video></td></tr>
+                        <tr>    <td><p class="videoDescription">El video muestra como la manera en la que los usuarios pueden interactuar con una interfaz de manera fácil y cómoda.</p></td>
+                    </tr>
+                </table>
+                </div>
+                <div class="topicDiv" style="margin-top: 25px">
+                <table>
+                    <tr><td><img class="topicImage" src="images/T2.jpg" title="Topic 2" alt="Topic 2"></td>
+                    <td><h2>Tema 2 - HTML5-CSS3</h2></td></tr>
+                </table>
+                <p>
+                    En primer lugar, cabe decir que el HTML es un lenguaje utilizado para estructurar y presentar el contenido en la web constantemente, a través de los navegadores.
+
+                    Por su parte, el CSS3 (Cascading Style Sheets) es un lenguaje de diseño de páginas web, se trata del idioma utilizado para la aplicación de diseño de páginas web front-end.
+                </p>
+                <table class="pc">
+                        <tr><td> <video width="205" height="108" controls>
+                            <source src="videos/Usabilidad.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video></td>
+                        <td><p class="videoDescription">En este video se puede ver un ejemplo del grado de usabilidad de la aplicación Shazam para IOS.</p></td></tr>
+                    </table>
+                    <table class="tabPho">
+                     
+                        <tr><td> <video width=100% height="200" controls>
+                            <source src="videos/Usabilidad.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video></td></tr>
+                            <tr>    <td><p class="videoDescription">En este video se puede ver un ejemplo del grado de usabilidad de la aplicación Shazam para IOS.</p></td></tr>
+                        </table>
+                    <table class="pc">
+                        <tr><td> <video width="205" height="108" controls>
+                            <source src="videos/Netflix.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video></td>
+                        <td><p class="videoDescription">En este caso la aplicación Netflix se puede ver como destaca por su facilidad de uso y una interación efectiva con el ususario.</p></td></tr>
+                    </table>
+                    <table class="tabPho">
+                       
+                        <tr><td> <video width=100% height="200" controls>
+                            <source src="videos/Netflix.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video></td></tr>
+                            <tr>    <td><p class="videoDescription">En este caso la aplicación Netflix se puede ver como destaca por su facilidad de uso y una interación efectiva con el ususario.</p></td></tr>
+                        </table>
+                    <table class="pc">
+                        <tr><td> <video width="205" height="108" controls>
+                            <source src="videos/Laptop.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video></td>
+                        <td><p class="videoDescription">El video muestra como la manera en la que los usuarios pueden interactuar con una interfaz de manera fácil y cómoda.</p></td></tr>
+                    </table>
+                    <table class="tabPho">
+                        
+                        <tr><td> <video width=100% height="200" controls>
+                            <source src="videos/Laptop.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video></td></tr>
+                            <tr>    <td><p class="videoDescription">El video muestra como la manera en la que los usuarios pueden interactuar con una interfaz de manera fácil y cómoda.</p></td></tr>
+                        </table>
+               </div>
+                <div class="topicDiv" style="margin-top: 25px">
+                <table>
+                    <tr><td><img class="topicImage" src="images/T3.jpg" title="Topic 3" alt="Topic 3"></td>
+                    <td><h2>Tema 3 - Javascript</h2></td></tr>
+                </table>
+                <p>La usabilidad web es la disciplina que estudia la forma de diseñar sitios web para que los usuarios puedan interactuar con ellos de la forma más fácil, cómoda e intuitiva posible.
+
+                La mejor forma de crear un sitio web usable es realizando un diseño centrado en el usuario, diseñando para y por el usuario, en contraposición a lo que podría ser un diseño centrado en la tecnología o uno centrado en la creatividad u originalidad.
+                </p>
+                <table class="pc">
+                        <tr><td> <video width="205" height="108" controls>
+                            <source src="videos/Usabilidad.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video></td>
+                        <td><p class="videoDescription">En este video se puede ver un ejemplo del grado de usabilidad de la aplicación Shazam para IOS.</p></td></tr>
+                    </table>
+                    <table class ="tabPho">
+                        <tr><td> <video width="100%" height="200" controls>
+                            <source src="videos/Usabilidad.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video></td></tr>
+                            <tr>    <td><p class="videoDescription">En este video se puede ver un ejemplo del grado de usabilidad de la aplicación Shazam para IOS.</p></td></tr>
+                        </table>
+                    <table class="tabPho">
+                        <tr><td><b>Vídeo 2</b></td></tr>
+                        <tr><td> <video width=100% height="200" controls>
+                            <source src="videos/Laptop.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video></td></tr>
+                            <tr>    <td><p class="videoDescription">El video muestra como la manera en la que los usuarios pueden interactuar con una interfaz de manera fácil y cómoda.</p></td></tr>
+                        </table>
+                    <table class="pc">
+                        <tr><td> <video width="205" height="108" controls>
+                            <source src="videos/Laptop.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video></td>
+                        <td><p class="videoDescription">El video muestra como la manera en la que los usuarios pueden interactuar con una interfaz de manera fácil y cómoda.</p></td></tr>
+                    </table>
+                    <table class="tabPho">
+                        <tr><td><b>Vídeo 2</b></td></tr>
+                        <tr><td> <video width=100% height="200" controls>
+                            <source src="videos/Laptop.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video></td></tr>
+                            <tr>    <td><p class="videoDescription">El video muestra como la manera en la que los usuarios pueden interactuar con una interfaz de manera fácil y cómoda.</p></td></tr>
+                        </table>
+                    <table class="pc">
+                        <tr><td> <video width="205" height="108" controls>
+                            <source src="videos/Laptop.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video></td>
+                        <td><p class="videoDescription">El video muestra como la manera en la que los usuarios pueden interactuar con una interfaz de manera fácil y cómoda.</p></td></tr>
+                    </table>
+               </div> 
+               
+               <div id="studentDiv">
+                <table class="alumn">
+                    <tr><td rowspan="2"><img class="topicImage" src="images/user.png" title="Alumno" alt="Alumno"></a></td>
+                    <td><b>Antonio Garcia</b></td>
+                    <tr><td><p>holahoo@yahoo.es</p></td><td><img class="iconMail" src="images/icon.jpg" title="Enviar email" alt="Enviar email"></td>
+                </table>
+                <table class="alumn">
+                    <tr><td rowspan="2"><img class="topicImage" src="images/user.png" title="Alumno" alt="Alumno"></a></td>
+                    <td><b>Antonio Garcia</b></td>
+                    <tr><td><p>holahoo@yahoo.es</p></td><td><img class="iconMail" src="images/icon.jpg" title="Enviar email" alt="Enviar email"></td>
+                </table>
+                <table class="alumn">
+                    <tr><td rowspan="2"><img class="topicImage" src="images/user.png" title="Alumno" alt="Alumno"></a></td>
+                    <td><b>Antonio Garcia</b></td>
+                    <tr><td><p>holahoo@yahoo.es</p></td><td><img class="iconMail" src="images/icon.jpg" title="Enviar email" alt="Enviar email"></td>
+                </table>
+                <table class="alumn">
+                    <tr><td rowspan="2"><img class="topicImage" src="images/user.png" title="Alumno" alt="Alumno"></a></td>
+                    <td><b>Antonio Garcia</b></td>
+                    <tr><td><p>holahoo@yahoo.es</p></td><td><img class="iconMail" src="images/icon.jpg" title="Enviar email" alt="Enviar email"></td>
+                </table>
+                <table class="alumn">
+                    <tr><td rowspan="2"><img class="topicImage" src="images/user.png" title="Alumno" alt="Alumno"></a></td>
+                    <td><b>Antonio Garcia</b></td>
+                    <tr><td><p>holahoo@yahoo.es</p></td><td><img class="iconMail" src="images/icon.jpg" title="Enviar email" alt="Enviar email"></td>
+                </table>
+                <table class="alumn">
+                    <tr><td rowspan="2"><img class="topicImage" src="images/user.png" title="Alumno" alt="Alumno"></a></td>
+                    <td><b>Antonio Garcia</b></td>
+                    <tr><td><p>holahoo@yahoo.es</p></td><td><img class="iconMail" src="images/icon.jpg" title="Enviar email" alt="Enviar email"></td>
+                </table>
+                <table class="alumn">
+                    <tr><td rowspan="2"><img class="topicImage" src="images/user.png" title="Alumno" alt="Alumno"></a></td>
+                    <td><b>Antonio Garcia</b></td>
+                    <tr><td><p>holahoo@yahoo.es</p></td><td><img class="iconMail" src="images/icon.jpg" title="Enviar email" alt="Enviar email"></td>
+                </table>
+                <table class="alumn">
+                    <tr><td rowspan="2"><img class="topicImage" src="images/user.png" title="Alumno" alt="Alumno"></a></td>
+                    <td><b>Antonio Garcia</b></td>
+                    <tr><td><p>holahoo@yahoo.es</p></td><td><img class="iconMail" src="images/icon.jpg" title="Enviar email" alt="Enviar email"></td>
+                </table>
+                <table class="alumn">
+                    <tr><td rowspan="2"><img class="topicImage" src="images/user.png" title="Alumno" alt="Alumno"></a></td>
+                    <td><b>Antonio Garcia</b></td>
+                    <tr><td><p>holahoo@yahoo.es</p></td><td><img class="iconMail" src="images/icon.jpg" title="Enviar email" alt="Enviar email"></td>
+                </table>
+                <table class="alumn">
+                    <tr><td rowspan="2"><img class="topicImage" src="images/user.png" title="Alumno" alt="Alumno"></a></td>
+                    <td><b>Antonio Garcia</b></td>
+                    <tr><td><p>holahoo@yahoo.es</p></td><td><img class="iconMail" src="images/icon.jpg" title="Enviar email" alt="Enviar email"></td>
+                </table>
+                
+               </div>
+
+               <div id="foroDiv">
+                <table class="alumn">
+                    <tr><td><b>Hola buenas</b><td></td><td><p>37 mensajes</p></td><td><p class="date">15:56 12/8/2020</p></td>
+                </table>
+                
+                <table class="alumn">
+                    <tr><td><b>Hola buenas</b><td></td><td><p>37 mensajes</p></td><td><p class="date">15:56 12/8/2020</p></td>
+                </table>
+
+                <table class="alumn">
+                    <tr><td><b>Hola buenas</b><td></td><td><p>37 mensajes</p></td><td><p class="date">15:56 12/8/2020</p></td>
+                </table>
+
+                <table class="alumn">
+                    <tr><td><b>Hola buenas</b><td></td><td><p>37 mensajes</p></td><td><p class="date">15:56 12/8/2020</p></td>
+                </table>
+
+                <table class="alumn">
+                    <tr><td><b>Hola buenas</b><td></td><td><p>37 mensajes</p></td><td><p class="date">15:56 12/8/2020</p></td>
+                </table>
+               </div>
+
+                <div id="calificacionesDiv">
+                    <table id ="calificacionesTable" class="center">
+                        <tr><td><b>Estudiante</b></td><td class="floatLeft"><b>Actividad 1</b></td><td class="floatLeft"><b>Examen 1</b></td><td class="floatLeft"><b>Examen 2</b></td></tr>
+                        <tr><td>Antonio García</td><td class="floatLeft">5.0</td><td class="floatLeft">6.0</td><td class="floatLeft">9.0</td></tr>
+                        <tr><td></td><td id="rev1" class="floatLeft">Pedir revisón</td><td id="rev1" class="floatLeft">Pedir revisión</td><td id="rev3" class="floatLeft">Pedir revisión</td></tr>
+        
+                    </table>
+                    <div id="calButton">
+                        <button id="excel" onclick="exportTableToExcel('calificacionesTable', 'Calificaciones')">Descargar en Excel</button>
+                        <button id="grafica">Ver gráfica</button>
+                    </div>
+                    <ul id ="genCalificacionesTable">
+                        <li class="asignatura">Interfaces de Usuario</li>
+                        <li class="asignatura">Redes de ordenadores</li>
+                        <li class="asignatura">Arquitectura de computadores</li>
+                        <li class="asignatura">Criptografía y seguridad informática</li>
+                        <li class="asignatura">Heurística y Optimización</li>
+                        <li class="asignatura">Organización de Computadores</li>
+                        <li class="asignatura">Diseño de sistemas operativos</li>
+                        <li class="asignatura">Sistemas distribuidos</li>
+                        <li class="asignatura">Técnicas de búsqueda y uso de la información</li>
+                        <li class="asignatura">Técnicas de desarollo de software</li>
+                    </ul>
+                </div> 
+               
+            </article>
+
+            <article class="article3">
+                <p class="h1" id="uno"><b></B>ÚLTIMAS NOTICIAS</b></p>
+                <p class="h1">20/09 - Nuevo tema añadido</p>
+                <p class="h1">21/09 - Nuevas diapositivas añadidas</p>
+                <p class="h1">22/09 - Nueva fecha de examen añadida</p>
+				<button type="button" id="calendario"><img class="calendarioimg" src="images/calendario.png">Próximos eventos</button>
+                <p class="h1">25/09 - Límite entrega práctica</p>
+                <p class="h1">28/09 - Examen parcial</p>
+                <p class="h1">29/09 - Clase presencial</p>
+            </article>
+        </section>
+        <footer>
+            <p><a href="">Ayuda<a href="">Política de privacidad</a><a href="">Preguntas Frecuentes</a><a href="">Sobre nosotros</a></p>
+            <p><img class=copyright src="images/copyright.png">     Universidad Carlos III de Madrid</p>
+        </footer>
+          
+
+    </div>
+
+    
+</body>
+</html>
