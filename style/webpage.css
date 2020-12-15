@@ -67,8 +67,8 @@ div#container {
 }
 
 
-div#form{
-    display:"none";
+div#newPage{
+    display:none;
 }
 
 div#foroDiv {
@@ -89,7 +89,7 @@ div#studentDiv {
    height: auto;
 }
 
-div#usuario{
+div#usuario2{
     background-color:#457b9d;
     height:100%;
     width: auto;
@@ -154,6 +154,12 @@ section#formulario{
     grid-template-columns: 10% 80% 10% ;	
 }
 table#tabInicio{
+    padding: 2% 0;
+}
+table#tabInicio2{
+    padding: 2% 0;
+}
+table#tabInicio3{
     padding: 2% 0;
 }
 
@@ -599,7 +605,7 @@ button#calendario{
         display: grid;
         grid-template-columns:50% 50%;
     }
-    div#usuario{height:100%;}
+    div#usuario2{height:100%;}
    
     
 }
@@ -614,6 +620,6 @@ button#calendario{
     .tabPho{display:block;}
     .nav{display:none;}
     .pc{display:none;}
-    div#usuario{height:100%;}
+    div#usuario2{height:100%;}
     
 } 

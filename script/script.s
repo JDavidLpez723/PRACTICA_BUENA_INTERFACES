@@ -100,7 +100,7 @@ $(document).ready(function start(){
 
     $(".closeSe").click(function(){
         if (confirm("¿Realmente quiere cerrar sesión?")) {
-            $("#form").css("display", "grid");
+            $("#newPage").css("display", "grid");
             $("#container").css("display", "none");
         }        
     });
@@ -208,42 +208,42 @@ function checkCookie(a) { //validamos formulario. Parametro: valor de contador. 
 
     username = document.getElementById('usuario').value;
     if (username == "") {
-        alert("Debe rellenar el usuario");
+        alert("Debe introducir su usuario");
         return "";
     }
 	nia = document.getElementById('nia').value;
 	if (nia == "") {
-        alert("Debe rellenar con su NIA");
+        alert("Debe introducir su NIA");
         return "";
     }
     password = document.getElementById('contraseña').value;
     if (password == "") {
-        alert("Debe rellenar la contraseña");
+        alert("Debe introducir una contraseña");
         return "";
     }
     namee = document.getElementById('nomAp').value;
     if (namee == "") {
-        alert("Debe rellenar el nombre");
+        alert("Debe instroducir su nombre");
         return "";
     }
     email = document.getElementById('correo').value;
     if (email == "") {
-        alert("Debe rellenar un email correcto");
+        alert("Debe introducir un email correcto");
         return "";
     }
     var exp = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
     if (exp.test(email) == false) {
-        alert("Debe rellenar un email correcto, formato nombre@dominio.extensión");
+        alert("Debe introducir un email con formato del tipo nombre@dominio.extensión");
         return "";
     }
     bday = document.getElementById('birth').value;
     if (bday == "") {
-        alert("Debe rellenar fecha de nacimiento");
+        alert("Debe introducir su fecha de nacimiento");
         return "";
     }
 	dni= document.getElementById('dni').value;
 	if (dni == "") {
-        alert("Debe rellenar su DNI");
+        alert("Debe introducir su DNI");
         return "";
     }
 	/*
@@ -284,7 +284,8 @@ function checkCookie(a) { //validamos formulario. Parametro: valor de contador. 
 
     //si todo esta correcto
 
-	alert("Registro realizado con éxito");
+    alert("Registro realizado con éxito");
+    $("#nombre").html(username);
     
 }
 
@@ -346,7 +347,11 @@ function check_session() { //comprobar el inicio de sesión para ver si existe c
 
         var foot = document.getElementsByTagName('footer');
         foot[0].style.position = 'static'; //para que no se fije el footer */
-        alert("usuario dado de alta");
+        alert("Bienvenido de nuevo");
+        $("#newPage").css("display", "none");
+        $("#container").css("display", "grid");
+        $("#nombre").html(usuario);
+        
 
 
     } else alert("Este usuario no está dado de alta"); //si no existe el usuario
