@@ -107,7 +107,7 @@
         </header>
         <section id="web">
            
-            <article class="article1">
+            <article class="article1"> <!--Columna derecha para moverse entre páginas-->
                 <p><button type="button"><b>INTERFACES DE USUARIO</b></button></p>
                 <table class="tablita">
                     <tr><td><button type="button" id="estudiantes"><img class="topicImagee" src="images/lista.png" title="estudiantes" alt="Listado de estudiantes">Listado de estudiantes</button></td></tr>
@@ -122,12 +122,12 @@
             <article>
 			
 			<div class="asig_ini">
-			<ul class="breadcrumb">
+			<ul class="breadcrumb"> <!--Camino de Migas de Pan-->
                     <li><a class=asig_ruta><img src="images/hogar.png"></a></li>
                     <li>Asignaturas</li>
                     </ul> 
 					
-				<ul id="menu">
+				<ul id="menu"> <!--Listado de asignaturas-->
 					<li><input type="checkbox" name="list" id="nivel_asig"><label for="nivel_asig">Ingenieria Informatica</label>
 					    <ul class="interior">
                         <li class="asig inicio"><a href="#">Interfaces de Usuario</a></li>
@@ -153,7 +153,7 @@
 				
 				
 			</div>
-               <div class="topicDiv">
+               <div class="topicDiv"> <!--Columna central, contenido de cada asignatura-->
 			    <ul class="breadcrumb">
                     <li><a class=asig_ruta><img src="images/hogar.png"></a></li>
                     <li><a class=asig_ruta>Asignaturas</a></li>
@@ -312,9 +312,9 @@
                     </table>
                </div> 
                
-               <div id="studentDiv">
+               <div id="studentDiv"> <!--Listado de estudiantes matriculados en  la asignatura-->
 			   
-			   <ul class="breadcrumb">
+			   <ul class="breadcrumb"> <!--Camino migas de pan-->
                     <li><a class=asig_ruta><img src="images/hogar.png"></a></li>
                     <li><a href="#" class=asig_ruta >Asignaturas</a></li>
                     <li><a href ="#" class=inicio>Interfaces de Usuario</a></li>
@@ -373,8 +373,8 @@
                 
                </div>
 
-               <div id="foroDiv">
-			     <ul class="breadcrumb">
+               <div id="foroDiv"> <!--Foro específico de cada asignatura-->
+			     <ul class="breadcrumb"> <!--Camino migas de pan-->
                     <li><a class=asig_ruta><img src="images/hogar.png"></a></li>
                     <li><a class=asig_ruta>Asignaturas</a></li>
                     <li><a href="#" class=inicio>Interfaces de Usuario</a></li>
@@ -401,8 +401,8 @@
                 </table>
                </div>
 
-                <div id="calificacionesDiv">
-				<ul class="breadcrumb">
+                <div id="calificacionesDiv"> <!-- Calificaciones de cada alumno de la asignatura concreta-->
+				<ul class="breadcrumb"> <!--Camino migas de pan-->
                     <li><a class=asig_ruta><img src="images/hogar.png"></a></li>
                     <li><a class=asig_ruta>Asignaturas</a></li>
                     <li><a href="#" class=inicio>Interfaces de Usuario</a></li>
@@ -414,11 +414,11 @@
                         <tr><td></td><td id="rev1" class="floatLeft">Pedir revisón</td><td id="rev1" class="floatLeft">Pedir revisión</td><td id="rev3" class="floatLeft">Pedir revisión</td></tr>
         
                     </table>
-                    <div id="calButton">
+                    <div id="calButton"> <!-- Botones pestaña calificaciones-->
                         <button id="excel" onclick="exportTableToExcel('calificacionesTable', 'Calificaciones')">Descargar en Excel</button>
                         <button id="grafica">Ver gráfica</button>
                     </div>
-                    <ul id ="genCalificacionesTable">
+                    <ul id ="genCalificacionesTable"> <!--Listado calificaciones del alumno de todas las asignaturas-->
                         <li class="asignatura">Interfaces de Usuario</li>
                         <li class="asignatura">Redes de ordenadores</li>
                         <li class="asignatura">Arquitectura de computadores</li>
@@ -434,7 +434,7 @@
                
             </article>
 
-            <article class="article3">
+            <article class="article3"> <!--Columna de eventos y novedades-->
                 <p class="h1" id="uno"><b></B>ÚLTIMAS NOTICIAS</b></p>
                 <p class="h1">20/09 - Nuevo tema añadido</p>
                 <p class="h1">21/09 - Nuevas diapositivas añadidas</p>
@@ -445,7 +445,8 @@
                 <p class="h1">29/09 - Clase presencial</p>
             </article>
         </section>
-        <footer>
+
+        <footer> <!--Pie de página del sitio-->
             <p><a href="">Ayuda<a href="">Política de privacidad</a><a href="">Preguntas Frecuentes</a><a href="">Sobre nosotros</a></p>
             <p><img class=copyright src="images/copyright.png">     Universidad Carlos III de Madrid</p>
         </footer>
@@ -453,10 +454,8 @@
 
     </div>
 
-    <div id="newPage">
+    <div id="newPage"> <!--Página de login de la pagina web-->
         <section id="inicio">
-           
-		
 			 <div>
                 <table id="tabInicio2">
                     <tr><td><a href="webpage2.html"><img class="menu" src="images/menu.png" title="menu" alt="menu"></a></td><td><img class="logo" src="images/logo.png" title="logo" alt="logo"></td>
@@ -482,7 +481,7 @@
 		
 		
 		
-		<section id="formulario">
+		<section id="formulario"> <!--Formulario de registro de la página-->
             <div>
                 <table id="tabInicio3">
                     <tr><td><a href="webpage2.html"><img class="menu" src="images/menu.png" title="menu" alt="menu"></a></td><td><img class="logo" src="images/logo.png" title="logo" alt="logo"></td>
@@ -577,25 +576,12 @@
                                 </datalist>
                             </td>
                         </tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
                         <tr>
                             <td colspan="2" >
                                 <input type="checkbox" id="terms" name="terms" value="yes" required>
                                 <label for="terms">He leído y acepto las Condiciones de uso*</label><br>
                             </td>
                         </tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
                         <tr><td colspan="2">
                             <input type="submit" value="Guardar" id="save">
                             <input type="reset" value="Borrar" id="delete">
