@@ -378,6 +378,10 @@ button#calendario{
     
 }
 
+.tituloLogin{
+    color: solid #1d3557;
+}
+
 .header{
     padding: 1em;
     text-align: justify;
@@ -413,7 +417,14 @@ button#calendario{
 }
 
 .formTable{
-    width: 100%;
+    width: 70%;
+    border: 5px solid #1d3557;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    margin:0 auto;
 }
 
 .logo{
@@ -530,6 +541,7 @@ button#calendario{
 .space1{
     padding-left: 1em;
     padding-right: 1em;
+    color: #1d3557;
 }
 
 .tablet{

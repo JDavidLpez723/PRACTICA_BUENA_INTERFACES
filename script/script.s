@@ -3,6 +3,8 @@ $(document).ready(function start(){
     // Cargar gráficos de google
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChart);
+
+    //Al inicio de la página se muestra solo las asignaturas, para las demás funcionalidades hay que registrarse primero
 	$(".article1").css("display","none");
 	$("#web").css("grid-template-columns","75% 25%");
 
