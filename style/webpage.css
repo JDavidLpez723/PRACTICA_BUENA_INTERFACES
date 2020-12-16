@@ -599,8 +599,8 @@ button#calendario{
 	width:auto;
 }
 
-.asig_ruta{
-	
+#genCalificacionesTable li{
+    padding: 2%;
 }
 
 
