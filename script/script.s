@@ -136,6 +136,14 @@ $(document).ready(function start(){
         }        
     });
 
+    $(".closeForm").click(function(){
+        if (confirm("¿Desea cancelar el formulario?")) {
+            $("#formulario").css("display", "none");
+            $("#inicio").css("display", "grid");
+            
+        }
+    })
+
     $("#rev1").click(function(){
         window.alert("Las revisiones solo estarán disponibles en un plazo de siete días después de la publicación de la nota.");
     });
