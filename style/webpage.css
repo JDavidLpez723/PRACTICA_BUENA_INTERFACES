@@ -91,7 +91,7 @@ div#studentDiv {
 
 div#usuario2{
     background-color:#457b9d;
-    height:100%;
+    height:70%;
     width: auto;
     border-radius: 0.6em;
     display: grid;
@@ -516,9 +516,9 @@ button#calendario{
 }
 
 .perfil{
-    width: 80%;
+    width: 85%;
     height: 70%;
-    border-radius: 50%;
+    border-radius: 70%;
     padding-top:1em;
     padding-bottom:1em;
 }
