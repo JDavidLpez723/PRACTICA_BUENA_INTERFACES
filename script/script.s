@@ -103,7 +103,7 @@ $(document).ready(function start(){
     });
 
     $(".iconMail").click(function(){
-        window.location.href="mailto:someone@example.com?Subject=Interfaces%20de%20Usuario";
+        window.location.href="mailto:agarcia@gmail.es?Subject=Interfaces%20de%20Usuario";
     })
 
     $("#grafica").click(function(){
