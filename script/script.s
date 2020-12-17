@@ -5,9 +5,8 @@ $(document).ready(function start(){
     google.charts.setOnLoadCallback(drawChart);
 
     //Al inicio de la página se muestra solo las asignaturas, para las demás funcionalidades hay que registrarse primero
-	$(".article1").css("display","none");
-	$("#web").css("grid-template-columns","75% 25%");
-
+    $("#container").css("display", "none");
+    $("#newPage").css("display","block");
     // Dibujar el gráfico y establecer los valores inciales
     function drawChart() {
         var data = google.visualization.arrayToDataTable([
@@ -168,6 +167,7 @@ $(document).ready(function start(){
     });
     $("#login").click(function(){
         check_session();
+        $(".asig_ini").css("display", "block");
     });
     $("#alumno").click(function(){
         $(".grado").show();
@@ -315,7 +315,6 @@ function checkCookie(a) { //validamos formulario. Parametro: valor de contador. 
     }
     //almacenamos en un String los valores de los campos separados por delimitador
     var userdata = username + delimiter + nia + delimiter + password + delimiter + namee + delimiter + email + delimiter + bday + delimiter + dni + delimiter + conditions;
-    alert("hola");
     counter = parseInt(a, 10); //pasamos a entero el contador
     counter += 1; //lo incrementamos para llamar a la proxima cookie
     name_cookie = "" + counter; //ponemos nombre a cookie

@@ -561,6 +561,7 @@ button#calendario{
 	float:left;
 	margin-left:1%;
 	width:auto;
+    display: block;
 
 }
 #menu * :hover,
@@ -587,6 +588,7 @@ button#calendario{
 #menu input:checked ~ label:before{ content:"\025be";}
 #menu .interior{display: none;}
 #menu input:checked ~ ul{display:block;}
+
 
 .asig_ini ul{
 	list-style:none;
