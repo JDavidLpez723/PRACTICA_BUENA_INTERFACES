@@ -166,6 +166,9 @@ table#tabInicio3{
 td#rev1{
     color: grey;
 }
+td#rev2{
+    color: grey;
+}
 
 td#rev3{
     color: red;
@@ -173,6 +176,13 @@ td#rev3{
 
 td#rev1:hover,
 td#rev1:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+td#rev2:hover,
+td#rev2:focus {
     color: white;
     text-decoration: none;
     cursor: pointer;

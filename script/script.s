@@ -149,6 +149,9 @@ $(document).ready(function start(){
     $("#rev1").click(function(){
         window.alert("Las revisiones solo estarán disponibles en un plazo de siete días después de la publicación de la nota.");
     });
+    $("#rev2").click(function(){
+        window.alert("Las revisiones solo estarán disponibles en un plazo de siete días después de la publicación de la nota.");
+    });
     $("#rev3").click(function(){
         if (confirm("¿Realmente quiere solicitar la revisión de esta tarea?")) {
             window.alert("Revisión solicitada correctamente. El profesor le comunicará la fecha y hora asignada.");
